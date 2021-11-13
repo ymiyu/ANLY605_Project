@@ -1,6 +1,8 @@
-scikit-learn
+scikit-learn == 0.23.2
 pandas
 numpy
 matplotlib
 seaborn
 dython
+xgboost == 1.2.1
+lightgbm == 3.3.1
