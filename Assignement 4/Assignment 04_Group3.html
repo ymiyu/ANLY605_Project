@@ -14315,8 +14315,8 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;online_shoppers_intention.csv&quot;</span><span class="p">)</span>
-<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_g03</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;online_shoppers_intention.csv&quot;</span><span class="p">)</span>
+<span class="n">df_g03</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -14504,7 +14504,7 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_g03</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -14719,8 +14719,8 @@ a.anchor-link {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">copy</span>
-<span class="n">clean_df</span> <span class="o">=</span> <span class="n">copy</span><span class="o">.</span><span class="n">deepcopy</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
-<span class="n">clean_df</span><span class="o">.</span><span class="n">dtypes</span>
+<span class="n">clean_df_g03</span> <span class="o">=</span> <span class="n">copy</span><span class="o">.</span><span class="n">deepcopy</span><span class="p">(</span><span class="n">df_g03</span><span class="p">)</span>
+<span class="n">clean_df_g03</span><span class="o">.</span><span class="n">dtypes</span>
 </pre></div>
 
      </div>
@@ -14781,8 +14781,8 @@ dtype: object</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">clean_df</span><span class="p">[</span><span class="s2">&quot;Month&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">clean_df</span><span class="o">.</span><span class="n">Month</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;category&quot;</span><span class="p">)</span>
-<span class="n">clean_df</span><span class="p">[</span><span class="s2">&quot;VisitorType&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">clean_df</span><span class="o">.</span><span class="n">VisitorType</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;category&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">clean_df_g03</span><span class="p">[</span><span class="s2">&quot;Month&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">clean_df_g03</span><span class="o">.</span><span class="n">Month</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;category&quot;</span><span class="p">)</span>
+<span class="n">clean_df_g03</span><span class="p">[</span><span class="s2">&quot;VisitorType&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">clean_df_g03</span><span class="o">.</span><span class="n">VisitorType</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;category&quot;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14825,7 +14825,7 @@ dtype: object</pre>
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># enc = OneHotEncoder(handle_unknown=&#39;ignore&#39;)</span>
 <span class="c1"># encoded_df = enc.fit_transform(clean_df)</span>
-<span class="n">encoded_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">clean_df</span><span class="p">)</span>
+<span class="n">encoded_df_g03</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">clean_df_g03</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14839,8 +14839,8 @@ dtype: object</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X</span> <span class="o">=</span> <span class="n">encoded_df</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;Revenue&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">y</span> <span class="o">=</span> <span class="n">encoded_df</span><span class="p">[</span><span class="s1">&#39;Revenue&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X</span> <span class="o">=</span> <span class="n">encoded_df_g03</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;Revenue&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">encoded_df_g03</span><span class="p">[</span><span class="s1">&#39;Revenue&#39;</span><span class="p">]</span>
 </pre></div>
 
      </div>
@@ -14938,7 +14938,7 @@ dtype: object</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">base_models</span><span class="p">():</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">base_models_g03</span><span class="p">():</span>
     <span class="n">models</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
     <span class="n">models</span><span class="p">[</span><span class="s1">&#39;Logistic&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">LogisticRegression</span><span class="p">(</span><span class="n">solver</span><span class="o">=</span><span class="s1">&#39;liblinear&#39;</span><span class="p">)</span>
     <span class="n">models</span><span class="p">[</span><span class="s1">&#39;DecisionTree&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">DecisionTreeClassifier</span><span class="p">()</span>
@@ -14977,11 +14977,11 @@ dtype: object</pre>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># get the models to evaluate</span>
-<span class="n">baseline_model</span> <span class="o">=</span> <span class="n">base_models</span><span class="p">()</span>
+<span class="n">baseline_model_g03</span> <span class="o">=</span> <span class="n">base_models_g03</span><span class="p">()</span>
 <span class="c1"># evaluate the models and store results</span>
 <span class="n">results</span><span class="p">,</span> <span class="n">names</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(),</span> <span class="nb">list</span><span class="p">()</span> 
 
-<span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">model</span> <span class="ow">in</span> <span class="n">baseline_model</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+<span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">model</span> <span class="ow">in</span> <span class="n">baseline_model_g03</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
   <span class="n">scores</span> <span class="o">=</span> <span class="n">eval_models</span><span class="p">(</span><span class="n">model</span><span class="p">)</span>
   <span class="n">results</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span>
   <span class="n">names</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
@@ -15033,10 +15033,10 @@ dtype: object</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">classificationmod</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="n">results</span><span class="p">),</span> <span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Logistic&quot;</span><span class="p">,</span><span class="s2">&quot;DecisionTree&quot;</span><span class="p">,</span><span class="s2">&quot;RandomForest&quot;</span><span class="p">,</span><span class="s2">&quot;KNN&quot;</span><span class="p">,</span> <span class="s2">&quot;Bagging&quot;</span><span class="p">,</span><span class="s2">&quot;GBM&quot;</span><span class="p">,</span> <span class="s2">&quot;XGBoost&quot;</span><span class="p">,</span><span class="s2">&quot;LightGBM&quot;</span><span class="p">])</span>
-<span class="n">classificationmod</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">classificationmod</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(),</span> <span class="n">id_vars</span><span class="o">=</span><span class="s1">&#39;index&#39;</span><span class="p">,</span><span class="n">value_vars</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Logistic&quot;</span><span class="p">,</span><span class="s2">&quot;DecisionTree&quot;</span><span class="p">,</span><span class="s2">&quot;RandomForest&quot;</span><span class="p">,</span><span class="s2">&quot;KNN&quot;</span><span class="p">,</span> <span class="s2">&quot;Bagging&quot;</span><span class="p">,</span><span class="s2">&quot;GBM&quot;</span><span class="p">,</span><span class="s2">&quot;XGBoost&quot;</span><span class="p">,</span><span class="s2">&quot;LightGBM&quot;</span><span class="p">])</span>
-<span class="n">classificationmod</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;index&#39;</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">classificationmod</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Model&#39;</span><span class="p">,</span> <span class="s1">&#39;Score&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">classificationmod_g03</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="n">results</span><span class="p">),</span> <span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Logistic&quot;</span><span class="p">,</span><span class="s2">&quot;DecisionTree&quot;</span><span class="p">,</span><span class="s2">&quot;RandomForest&quot;</span><span class="p">,</span><span class="s2">&quot;KNN&quot;</span><span class="p">,</span> <span class="s2">&quot;Bagging&quot;</span><span class="p">,</span><span class="s2">&quot;GBM&quot;</span><span class="p">,</span> <span class="s2">&quot;XGBoost&quot;</span><span class="p">,</span><span class="s2">&quot;LightGBM&quot;</span><span class="p">])</span>
+<span class="n">classificationmod_g03</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">classificationmod_g03</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(),</span> <span class="n">id_vars</span><span class="o">=</span><span class="s1">&#39;index&#39;</span><span class="p">,</span><span class="n">value_vars</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Logistic&quot;</span><span class="p">,</span><span class="s2">&quot;DecisionTree&quot;</span><span class="p">,</span><span class="s2">&quot;RandomForest&quot;</span><span class="p">,</span><span class="s2">&quot;KNN&quot;</span><span class="p">,</span> <span class="s2">&quot;Bagging&quot;</span><span class="p">,</span><span class="s2">&quot;GBM&quot;</span><span class="p">,</span><span class="s2">&quot;XGBoost&quot;</span><span class="p">,</span><span class="s2">&quot;LightGBM&quot;</span><span class="p">])</span>
+<span class="n">classificationmod_g03</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;index&#39;</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">classificationmod_g03</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Model&#39;</span><span class="p">,</span> <span class="s1">&#39;Score&#39;</span><span class="p">]</span>
 </pre></div>
 
      </div>
@@ -15056,7 +15056,7 @@ dtype: object</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">box</span><span class="p">(</span><span class="n">classificationmod</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;Model&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;Score&quot;</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;Model&quot;</span><span class="p">,</span><span class="n">points</span><span class="o">=</span><span class="s1">&#39;all&#39;</span><span class="p">,</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">box</span><span class="p">(</span><span class="n">classificationmod_g03</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;Model&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;Score&quot;</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;Model&quot;</span><span class="p">,</span><span class="n">points</span><span class="o">=</span><span class="s1">&#39;all&#39;</span><span class="p">,</span>
 <span class="n">labels</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;Model&quot;</span><span class="p">:</span> <span class="s2">&quot;Machine Learning Model&quot;</span><span class="p">,</span>
         <span class="s2">&quot;Score&quot;</span><span class="p">:</span> <span class="s2">&quot;Accuracy&quot;</span>
         <span class="p">},</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;Model Performance&quot;</span><span class="p">)</span>
