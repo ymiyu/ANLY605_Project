@@ -1,1 +1,2 @@
 flask_app/.venv/*
+flask_app/app/__pycache__/app.cpython-38.pyc
