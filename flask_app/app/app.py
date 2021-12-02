@@ -4,15 +4,15 @@ import pickle
 import pandas as pd
 import plotly.express as px
 import plotly.subplots as make_subplots
-import plotly.grapg_objs as go
+import plotly.graph_objs as go
 import uuid
 
 app = Flask(__name__)
 
 @app.route("/", methods=['GET','POST'])
 def hello_world():
-    #return render_template('index.html', href='static/Boxplot.jpeg')
-    
+    #return render_template('index.html', href='static/Boxplot.jpeg'
+
     request_type_str = request.method
     if request_type_str == "GET":
         return render_template('isndex.html', href=path)
