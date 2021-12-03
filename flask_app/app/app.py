@@ -114,6 +114,5 @@ def plot_graphs(model,new_input_arr, output_file):
     # fig.update_yaxes(title_text="yaxis 2 title", range=[40, 80], row=1, col=2)
     # Update title and height
     fig.update_layout(height=600, width=1400, title_text="Client campaing acceptance")
-    output_file="app/static/plot.svg"
     fig.write_image(output_file,width=1200,engine="kaleido")
     fig.show()
