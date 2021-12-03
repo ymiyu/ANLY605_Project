@@ -12,7 +12,7 @@ app = Flask(__name__)
 @app.route("/", methods=['GET','POST'])
 def hello_world():
     #return render_template('index.html', href='static/Boxplot.jpeg'
-    path = 'static/Boxplot.jpeg' #Have to edit this line!
+    path = 'static/barplot.svg' #Have to edit this line!
     request_type_str = request.method
     if request_type_str == "GET":
         return render_template('index.html', href=path)
