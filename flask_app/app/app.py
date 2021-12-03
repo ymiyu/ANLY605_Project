@@ -12,11 +12,12 @@ app = Flask(__name__)
 @app.route("/", methods=['GET','POST'])
 def hello_world():
     #return render_template('index.html', href='static/Boxplot.jpeg'
-    path = 'static/barplot1.svg' #Have to edit this line!
+    #path = 'static/barplot1.svg' #Have to edit this line!
     request_type_str = request.method
     if request_type_str == "GET":
-        return render_template('index.html', href=path)
+        return render_template('index.html', href='static/barplot1.svg')
     else:
+        #return render_template('index.html', href='static/Boxplt.jpeg')
         text = request.form['text']
         random_string = uuid.uuid4().hex
         path = "static/" + random_string + ".svg"
