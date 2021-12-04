@@ -6,6 +6,7 @@ import plotly.express as px
 import plotly.subplots as make_subplots
 import plotly.graph_objs as go
 import uuid
+import copy
 
 app = Flask(__name__)
 
@@ -67,11 +68,11 @@ def get_input(string):
 
 def plot_graphs(model,new_input_arr, output_file):
     df = pd.read_csv("bank-additional-full.csv", sep=";")
+    df_age = copy.deepcopy(df[["age","y"]])
     df_age = df[["age","y"]]
+
     df_age["age_group"] = (df_age["age"]//10)*10
     df_age = df_age.groupby(["age_group","y"], as_index=False).count()
-
-
     new_preds = model.predict(new_input_arr)[0]
 
     # Get the age from user input
