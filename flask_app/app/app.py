@@ -15,7 +15,7 @@ def hello_world():
     #path = 'static/barplot1.svg' #Have to edit this line!
     request_type_str = request.method
     if request_type_str == "GET":
-        return render_template('index.html', href='static/barplot1.svg')
+        return render_template('index.html', href="static/barplot1.svg")
     else:
         #return render_template('index.html', href='static/Boxplt.jpeg')
         text = request.form['text']
