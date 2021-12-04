@@ -17,6 +17,7 @@ def hello_world():
     if request_type_str == "GET":
         return render_template('index.html', href="static/barplot1.svg")
     else:
+        #return render_template('index.html', href='static/Boxplt.jpeg')
         text = request.form['text']
         random_string = uuid.uuid4().hex
         path = "static/" + random_string + ".svg"
